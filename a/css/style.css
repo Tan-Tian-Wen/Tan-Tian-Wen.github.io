@@ -1,10 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200);
-
 body{
   font-family: 'Raleway', sans-serif;
   font-size:14px;
   font-weight: 400;
-  overflow-y:scroll;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -33,7 +30,6 @@ a{
 	-ms-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in; 
-	border-bottom:1px solid #dedede;
 }
 
 a:focus {
@@ -62,14 +58,18 @@ PRELOADER
  
 .preloader .item{
   position:absolute;
-  width:50px;
+  width:100%;
   height:50px;
-  left:50%;
+  
   top:50%;
-  margin-left:-25px;
+  text-align:center;
+  line-height:30px;
+  color:#777;
   margin-top:-25px;
 } 
-
+.preloader .item p {
+	padding:0 10px;
+	margin-top:30px;}
 .spinner {
   width: 40px;
   height: 40px;
@@ -79,7 +79,8 @@ PRELOADER
   -webkit-animation: scaleout 1.0s infinite ease-in-out;
   animation: scaleout 1.0s infinite ease-in-out;
 }
-
+.hover-bg .hover-text > h5 {
+	margin:10px 0;}
 @-webkit-keyframes scaleout {
   0% { -webkit-transform: scale(0.0) }
   100% {
@@ -703,3 +704,76 @@ textarea:focus{background:#f4f4f4; height:250px;}
 
 .content{padding-top:0}
 .two-column{line-height:24px}
+
+nav#menu span.fa.fa-bars2 {
+    color: #c0c0c0;
+    cursor: pointer;
+    font-size: 30px;
+    left: 120px;
+	width:26px;
+	height:21px;
+	top:50px;
+    position: fixed;
+    z-index: 999999;
+	background:url(../img/nav_bg.png) no-repeat;
+}
+nav#menu span.fa.fa-bars2:hover {
+	background:url(../img/nav_bg_h.png) no-repeat;
+	}
+.navmenu .close {
+	padding:0;
+	width:40px;
+	height:40px;
+	background:url(../img/close_btn.gif) center center no-repeat #fff;
+	}
+.navmenu .close:hover {
+	background:url(../img/close_btn_h.gif) center center no-repeat #c59a6d;
+	}
+	
+.fd_box {
+    height: 40px;
+    width: 47px;
+    position: fixed;
+    right: 100px;
+	bottom:20px;
+	z-index:99;
+}
+.fd_box a.top_btn {
+    background:  url(../img/fd_icon.png) no-repeat  center center #fff;
+    display: block;
+    height: 40px;
+    width: 28px;
+	border:1px solid #c59a6d;
+}
+.fd_box a:hover {
+    background:  url("../img/fd_icon_h.png") no-repeat  center center #c59a6d;
+}
+a.btn2 {
+	height:40px;
+	line-height:40px;
+	width:300px;
+	text-align:center;
+	display:block;
+	border:1px solid #bebebe;
+	background:#fff;
+	
+	font-size:16px;
+	margin:0 auto;
+	margin-top:20px;
+	color:#999;}
+a.btn2:hover {
+	color:#fff;
+	background:#c59a6d;
+	border:1px solid #c59a6d;}
+
+@media (max-width: 680px){
+	nav#menu span.fa.fa-bars2 {
+		left:50px;
+		top:20px;
+	}
+	.fd_box {
+		right:10px;
+		}
+	
+	
+}
