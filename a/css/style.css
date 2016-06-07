@@ -739,7 +739,7 @@ nav#menu span.fa.fa-bars2:hover {
 	z-index:99;
 }
 .fd_box a.top_btn {
-    background:  url(../img/fd_icon.png) no-repeat  center center #fff;
+    background:  url(../img/fd_icon.png) no-repeat  center center;
     display: block;
     height: 40px;
     width: 28px;
@@ -754,13 +754,13 @@ a.btn2 {
 	width:300px;
 	text-align:center;
 	display:block;
-	border:1px solid #bebebe;
+	border:1px solid #c59a6d;
 	background:#fff;
-	
+	color:#c59a6d;
 	font-size:16px;
 	margin:0 auto;
 	margin-top:20px;
-	color:#999;}
+	}
 a.btn2:hover {
 	color:#fff;
 	background:#c59a6d;
