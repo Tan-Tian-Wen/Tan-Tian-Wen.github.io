@@ -457,8 +457,8 @@ ul.clients li{
 	#background-repeat: no-repeat;
 	#background-attachment: scroll;
 	#text-align: center;
-	background: url(../img/bg3.jpg);
-	background-size: cover;
+	background: url(../img/bg6.jpg);
+	background-size: 100% auto ;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -605,3 +605,9 @@ nav#footer{
 }
 #footer a:hover{
 	color: #c59a6d;}
+
+.img-responsive {
+    position: relative;
+    height: auto;
+    width: auto;
+}
