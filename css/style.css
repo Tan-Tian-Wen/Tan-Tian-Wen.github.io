@@ -605,9 +605,3 @@ nav#footer{
 }
 #footer a:hover{
 	color: #c59a6d;}
-
-.img-responsive {
-    position: relative;
-    height: auto;
-    width: auto;
-}
